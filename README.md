@@ -10,8 +10,8 @@ I would not suggest it to be used in production. There is better alternative out
 |```CRON_SCHEDULE```|A crontab string to schedule the sync|```5 3 * * *```|
 |```CUSTOM_RCLONE_GLOBAL_OPTS```|Used to give extra command line options to rclone|```--log-level INFO```|
 |```RCLONE_CONF```|Used if you mount your own rclone configuration file into the container and need to provide the path to the file| |
-|```AWS_ACCESS_KEY```|The AWS Access Key that can use the S3 bucket. Required when your not using your own configuration file | |
-|```AWS_SECRET_KEY```|The AWS Secret Key that can use the S3 bucket. Required when your not using your own configuration file | |
+|```AWS_ACCESS_KEY```|The AWS Access Key that can use the S3 bucket. Required when you're not using an IAM Role or your own configuration file | |
+|```AWS_SECRET_KEY```|The AWS Secret Key that can use the S3 bucket. Required when you're not using an IAM Role or your own configuration file | |
 |```GDRIVE_SCOPE```|If you need to change the scope of the GDrive source|```drive.readonly```|
 |```GDRIVE_ROOTFLDR_ID```|Used if you want to override the default 'root' of the source| |
 |```GDRIVE_SERVACCT_FILE```|If you want to use a Service Account File. This should be the path to the file inside the container| |

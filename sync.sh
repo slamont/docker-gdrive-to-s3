@@ -21,13 +21,13 @@ rclone_exec="rclone ${CUSTOM_RCLONE_GLOBAL_OPTS} "
 
 get_source_name() {
   local source_id=
-  source_id=$($rclone_exec listremotes -l | grep drive | awk -F: '{print $1}')
+  source_id=$(${rclone_exec} listremotes -l | grep drive | awk -F: '{print $1}')
   echo "${source_id}:"
 }
 
 get_destination_name() {
   local destination_id=
-  destination_id=$($rclone_exec listremotes -l | grep s3 | awk -F: '{print $1}')
+  destination_id=$(${rclone_exec} listremotes -l | grep s3 | awk -F: '{print $1}')
   echo "${destination_id}:"
 }
 
